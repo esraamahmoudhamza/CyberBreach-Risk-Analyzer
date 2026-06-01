@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CyberBreach System</title>
+
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="logo">🛡 CyberBreach System</div>
+</div>
+
+<div class="search">
+    <input id="target" placeholder="Enter email or username...">
+    <button onclick="scan()">SCAN</button>
+</div>
+
+<div class="grid">
+
+    <!-- ROW 1 -->
+    <div class="card small">
+        <h4>Target</h4>
+        <h2 id="t">-</h2>
+    </div>
+
+    <div class="card small center">
+        <h4>Status</h4>
+        <div id="statusDot" class="dot"></div>
+        <h2 id="s">-</h2>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="card medium">
+        <h4>Breaches Level</h4>
+        <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="card medium center">
+        <h4>Risk Analysis</h4>
+        <canvas id="gauge"></canvas>
+        <h2 id="rText">-</h2>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

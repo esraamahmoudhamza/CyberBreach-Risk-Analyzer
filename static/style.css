@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #0b1220, #050814);
+    color: white;
+}
+
+/* TOP BAR */
+.topbar {
+    text-align: center;
+    padding: 20px;
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* SEARCH */
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+input {
+    padding: 14px;
+    width: 340px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(15, 23, 42, 0.6);
+    color: white;
+    outline: none;
+}
+
+button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    width: 88%;
+    margin: 35px auto;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 18px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(56,189,248,0.2);
+}
+
+/* FIXED LAYOUT */
+.card.small {
+    grid-column: span 6;
+}
+
+.card.medium {
+    grid-column: span 6;
+}
+
+/* TEXT */
+h2 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+h4 {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+/* CENTER */
+.center {
+    text-align: center;
+}
+
+/* DOT */
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+/* CLEAN COLORS (NO ORANGE) */
+.high {
+    background: #ef4444;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.25);
+}
+
+.medium {
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.15);
+}
+
+.low {
+    background: #22c55e;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.2);
+}
+
+/* CHART */
+canvas {
+    max-height: 170px;
+    margin-top: 10px;
+}
